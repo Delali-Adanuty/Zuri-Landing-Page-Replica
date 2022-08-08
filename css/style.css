@@ -45,7 +45,8 @@ header p{
     padding:0 24vw;
 }
 
-header p a{
+header p a,
+section.structure a{
     text-decoration:none;
     color:var(--theme-color);
 }
@@ -248,7 +249,11 @@ nav ul li a{
 nav ul li a button, 
 section.banner div.info button,
 section.why-us .hire-talent .buttons button,
-section.search-ended .text button{
+section.search-ended .text button,
+section.get-started .info button,
+section.scope .buttons button,
+section.faqs .buttons button,
+section.started button{
     border:none;
     outline:none;
     background-color: var(--theme-color);
@@ -279,7 +284,9 @@ section.banner div.info h3 a,
 section.impact h3 a,
 section.why-us h3 a,
 section.search-ended .text a,
-section.why-zuri a{
+section.why-zuri a,
+section.scope a,
+section.faqs a{
     text-decoration: none;
     color:var(--theme-color);
 }
@@ -326,7 +333,12 @@ section.impact{
 section.impact h3, 
 section.why-us h3,
 section.search-ended .text h3,
-section.why-zuri h3{
+section.why-zuri h3,
+section.get-started .info h3,
+section.scope h3,
+section.faqs h3,
+section.structure h3,
+section.started h3{
     font-size:2.5rem;
     line-height: 3.3rem;
     margin-top:2rem;
@@ -342,7 +354,11 @@ section.search-ended .text .button-container button{
 }
 
 section.search-ended .text .button-container button,
-nav ul.links button.enroll{
+nav ul.links button.enroll,
+section.get-started .info button,
+section.scope .buttons button,
+section.faqs .buttons button,
+section.started button{
     border-radius:3rem;
 }
 
@@ -411,7 +427,9 @@ section.why-us .skills ul li:hover{
 }
 
 section.why-us h3,
-section.why-zuri h3{
+section.why-zuri h3,
+section.scope h3,
+section.started h3{
     width:35rem;
 }
 
@@ -429,7 +447,9 @@ section.why-us .hire-talent{
 }
 
 section.why-us .hire-talent h3,
-section.search-ended .text h3{
+section.search-ended .text h3,
+section.faqs h3,
+section.structure h3{
     text-align: center;
     justify-self: center;
     margin:3rem 0;
@@ -474,6 +494,7 @@ section.why-us .hire-talent .buttons{
 section.search-ended{
     display:flex;
     margin-top:8rem;
+    flex-wrap: wrap;
 }
 
 section.search-ended img{
@@ -495,7 +516,8 @@ section.powered-by p{
     width:30rem;
 }
 
-section.powered-by p{
+section.powered-by p,
+section.started p{
     font-size:1.09rem;
 }
 
@@ -503,7 +525,8 @@ section.why-zuri{
     padding:2rem 7vw;
 }
 
-section.why-zuri a{
+section.why-zuri a,
+section.faqs a{
     font-size:1.29rem;
 }
 
@@ -520,10 +543,12 @@ section.why-zuri ul{
 
 section.why-zuri ul li{
     display: inline-block;
-    width: 17rem;
+    width: 15rem;
     padding:5rem 3.3rem;
     border-radius: 1.3rem;
     margin:1.5rem 0;
+    background-color: white;
+    box-shadow: .4rem .4rem 1.3rem rgba(0, 0, 0, .13);
 }
 
 section.why-zuri ul li:first-of-type{
@@ -543,6 +568,476 @@ section.why-zuri ul li h2{
 section.why-zuri ul li p{
     font-size:1.09rem;
     margin-top:1rem;
+}
+
+section.get-started{
+    background-color: #ef332b;
+    padding:5rem 7vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+section.get-started .info{
+    width:32rem;
+}
+
+section.get-started .image img{
+    width:40rem;
+}
+
+section.get-started .info{
+    color:white;
+}
+
+section.get-started .info h3{
+    margin-top:0rem;
+    margin-bottom: 4rem;
+}
+
+section.get-started .info p{
+    font-size:1.17rem;
+    width: 27rem;
+}
+
+section.get-started .info button{
+    background-color: white;
+    color:var(--theme-color);
+    margin:2rem 0;
+}
+
+section.get-started .info ul li{
+    list-style: none;
+    border:2px solid white;
+    width: fit-content;
+    display: inline-flex;
+    padding:.75rem .8rem;
+    border-radius: 3rem;
+    margin:1rem 1rem 1rem 0;
+}
+
+section.get-started .info ul li img{
+    height: 3rem;
+}
+
+section.get-started .info ul li p{
+    width: 7rem;
+    align-self: center;
+    margin:0 .7rem;
+    margin-right: 2rem;
+    font-size: 1.07rem;
+}
+
+section.scope{
+    padding:3rem 7vw;
+}
+
+section.scope a,
+section.structure a{
+    font-size: 1.72rem;
+    margin-top: 2.5rem;
+}
+
+section.scope h3{
+    margin-top:0rem
+}
+
+section.scope ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin:4rem 0;
+}
+
+section.scope ul li{
+    box-shadow: .4rem .4rem 1.2rem rgba(0, 0, 0, .13);
+    list-style: none;
+    border-radius: 1.4rem;
+    margin:1rem 0;
+    padding:2.2rem 1.9rem;
+}
+
+section.scope ul li h4{
+    color:var(--text-color);
+    font-size:1.4rem;
+}
+
+section.scope ul li div.image-box img{
+    height: 2.3rem;
+    margin-right:.7rem;
+}
+
+section.scope ul li div.image-box{
+    padding:1rem 0;
+}
+
+section.scope ul li p{
+    width:19rem;
+}
+
+section.scope .buttons{
+    display: flex;
+    justify-content: center;
+}
+
+section.faqs{
+    border-top:1px solid var(--text-color);
+    border-bottom:1px solid var(--text-color);
+    padding:1rem 3rem;
+    margin:0 7vw;
+    display: grid;
+    padding-top: 5rem;
+}
+
+section.faqs a,
+section.structure a{
+    text-align: center;
+    justify-self: center;
+}
+
+section.faqs ul li{
+    border:1px solid var(--text-color);
+    list-style: none;
+    padding:.1rem .137rem;
+    transition: .45s all cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+section.faqs ul li .question-header{
+    display: flex;
+    justify-content: space-between;
+    margin:.4rem .8rem;
+}
+
+section.faqs ul li .question-header h4{
+    font-size: 1.2rem;
+    margin:.34rem 0;
+    font-weight: 450;
+}
+
+section.faqs ul li .answer{
+    display: none;
+    margin:.3rem .8rem; 
+}
+
+section.faqs .buttons button{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 1rem;
+}
+
+section.faqs .buttons p{
+    align-self: center;
+}
+
+section.faqs .buttons button p{
+    align-self: center;
+    margin:0 .5rem;
+}
+
+section.faqs .buttons button div{
+    display: flex;
+    align-content: center;
+}
+
+section.structure div.paths{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section.structure div.paths div{
+    background-color: #1b1a20;
+    color:white;
+    border-radius: 2rem;
+    padding:3.3rem 3rem;
+    width:22rem;
+    margin:1.3rem 1.5rem;
+}
+
+section.structure div.paths div h4{
+    font-size: 2rem;
+}
+
+section.structure div.paths div h5{
+    font-size: 1.25rem;
+    margin-top:2rem;
+}
+
+section.structure div.paths div p{
+    text-align: left;
+    margin:1rem 0;
+}
+
+section.structure div.paths div li{
+    margin:.25rem 0;
+    font-size: 1rem;
+    line-height: 1.42rem;
+}
+
+section.structure div.paths ul li{
+    list-style: none;
+}
+
+section.faqs .buttons{
+    display: flex;
+    justify-content: center;
+    margin:3rem 0;
+    flex-wrap: wrap;
+}
+
+section.structure{
+    display: grid;
+}
+
+section.structure p{
+    font-size: 1.09rem;
+    text-align: center;
+}
+
+.holder{
+    padding:3rem 7vw;
+}
+
+.holder section.started{
+    border-radius: 2rem;
+    background-color: var(--theme-color);
+    padding:5rem 0;
+    color:white;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.holder section.started .buttons{
+    display: flex;
+    justify-content: center;
+    margin:2rem 0;
+}
+
+.holder section.started button{
+    background-color: white;
+    color:var(--theme-color);
+}
+
+.holder section.started p,
+.holder section.started h3{
+    text-align: center;
+}
+
+footer.training{
+    background-color: white;
+    color:black;
+}
+
+footer.training p,
+footer.training.talent-footer a{
+    color:black;
+}
+
+footer.training p{
+    text-align: left;
+}
+
+footer.training div a{
+    text-align: right;
+}
+
+footer.training .links a{
+    margin-left:1rem;
+}
+
+footer.training .links{
+    display: flex;
+}
+
+footer.training.talent-footer ul li{
+    background-color: var(--theme-color);
+    padding:.5rem;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:1024px){
+    nav ul.links li{
+        display: none;
+    }
+
+    nav{
+        justify-content: space-between;
+        padding:0 1vw;
+        width:100%; 
+    }
+
+    nav ul.links li.show{
+        display: block;
+    }
+
+    section.search-ended{
+        justify-content: center;
+    }
+
+    section.why-zuri h3{
+        font-size:1.43rem;
+        font-weight: 500;
+        line-height: 1.6rem;
+    }
+
+    section.why-zuri .header img{
+        display: none;
+    }
+
+    section.why-zuri ul li,
+    section.scope ul li,
+    section.started,
+    section.structure .paths div{
+        width:90vw;
+    }
+
+    section.powered-by{
+        flex-direction: column;
+        justify-content: center;
+        padding:1.3rem 0;
+    }
+
+    section.powered-by img{
+        width:14rem;
+        align-self: center;
+    }
+
+    section.why-us h3,
+    section.why-zuri h3,
+    section.scope h3,
+    section.started h3,
+    section.powered-by h3,
+    section.powered-by p,
+    section.get-started h3,
+    section.get-started p,
+    section.faqs h3,
+    section.banner h3,
+    section.p h3{
+        max-width:80vw;
+        font-size: 1.72rem;
+        line-height: 2rem;
+    }
+
+    section{
+        width: 100vw !important;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    section.get-started .image img{
+        max-width:80vw;
+        height: 20rem;
+    }
+
+    section.faqs{
+        display: flex;
+        flex-direction: column;
+        padding:1rem 0rem;
+        align-content: center;
+        justify-content: center;
+        margin:0 5vw;
+    }
+
+    section.faqs ul li{
+        align-self: center;
+    }
+
+    footer.talent-footer{
+        display: flex;
+        flex-direction: column;
+    }  
+
+    section.search-ended{
+        width:90vw;
+        margin-left: 5vw;
+    }
+
+    section.search-ended img{
+        max-width: 80vw;
+    }
+
+    section.structure div.paths{
+        padding:0;
+    }
+
+    section.structure div.paths div{
+        width:60vw;
+    }
+
+    section.banner div.image{
+        display: none;
+    }
+
+    section.banner{
+        width:fit-content;
+        padding:0;
+    }
+
+    section.banner div.info p,
+    section.banner div.info h3,
+    div.hire-talent h3,
+    section.impact .info h3{
+        max-width:20rem;
+        font-size: 1.72rem;
+        line-height: 2rem;
+    }
+
+    section.impact{
+        padding:0;
+        display: flex;
+        justify-content: center;
+    }
+
+    section.impact div.info{
+        padding: 1rem;
+    }
+
+    section.impact div.image{
+        margin:0 2rem;
+    }
+
+    section.impact div.image img{
+        width:20rem;
+        height: 18rem;
+    }
+
+    section.banner div.info h3{
+        text-align: center;
+    }
+
+    section.banner div.info p{
+        font-size: 1.132rem;
+    }
+
+    section.banner .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.hire-talent{
+        padding:0;
+        display: grid;
+    }
+
+    section.why-us div.hire-talent ul li{
+        padding:0;
+    }
+
+    div.hire-talent ul li p{
+        margin:1rem;
+    }
+
+    section.banner .buttons button, 
+    .hire-talent .buttons button{
+        margin-bottom:1rem;
+    }
+
+    .hire-talent .buttons{
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -576,6 +1071,10 @@ section.why-zuri ul li p{
         padding: 0 2.2rem;
         padding-bottom:2rem;
         width:75vw;
+    }
+
+    nav ul.header li img{
+        height: 1.3rem;
     }
 }
 
