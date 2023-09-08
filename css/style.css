@@ -4,6 +4,8 @@
     font-family: 'dm sans';
 }
 
+@import url('https://fonts.cdnfonts.com/css/dm-sans');    
+
 :root{
     --text-color : #514949; 
     --theme-color: #ef332b;
